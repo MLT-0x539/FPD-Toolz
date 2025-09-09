@@ -178,7 +178,7 @@ function createCookieOverwriteScript($cookieNames, $testValues, $domain = null) 
     
     function testNextValue() {
         if (currentCookieIndex >= cookieNames.length) {
-            document.getElementById('status').innerHTML += '<div class="complete">✓ All cookies tested with all values</div>';
+            document.getElementById('status').innerHTML += '<div class="complete">All cookies tested with all values</div>';
             return;
         }
         
@@ -196,8 +196,8 @@ function createCookieOverwriteScript($cookieNames, $testValues, $domain = null) 
         setTimeout(function() {
             var newValue = getCookie(currentCookie);
             if (newValue === currentValue) {
-                console.log('✓ Success: Cookie', currentCookie, 'set to', currentValue);
-                statusDiv.innerHTML += '<div class="success">✓ Cookie set successfully</div>';
+                console.log('Success: Cookie', currentCookie, 'set to', currentValue);
+                statusDiv.innerHTML += '<div class="success">Cookie set successfully</div>';
                 
                 sessionStorage.setItem('currentTest', JSON.stringify({
                     cookie: currentCookie,
@@ -252,7 +252,7 @@ function createCookieOverwriteScript($cookieNames, $testValues, $domain = null) 
                 
                 console.log('FPD FOUND:', findings);
             } else {
-                statusDiv.innerHTML += '<div class="clean">✓ No FPD or stack traces detected</div>';
+                statusDiv.innerHTML += '<div class="clean">No FPD or stack traces detected</div>';
             }
             
             currentIndex = testInfo.valueIndex + 1;
