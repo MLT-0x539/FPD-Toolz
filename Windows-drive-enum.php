@@ -203,16 +203,6 @@
             margin: 15px 0;
         }
 
-        .warning {
-            background: #fff3cd;
-            color: #856404;
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 4px solid #ffc107;
-            margin: 15px 0;
-            font-size: 0.9em;
-        }
-
         .summary {
             background: #d4edda;
             border: 1px solid #c3e6cb;
