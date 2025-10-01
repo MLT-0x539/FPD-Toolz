@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="win-drive-enum.js"></script>
-    <link rel="stylesheet" type="text/css" href="win-drive-enum.css" /> 
+    <script src="/scripts/win-drive-enum.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/win-drive-enum.css" /> 
     <title>Windows Drive Letter Enumeration Tool</title>
 </head>
     
