@@ -1,1 +1,16 @@
-// NOTE: around 85% of the dorks within this list are for determining FPD paths on sites running on shared hosting -- it makes use of Bing's "IP:" operator combinedf with other dorks in order to ideentify FPD error messages on other websites that are onn the same shared host. Fromm there, we can get a solid idea of what the pattern is for default webroot dirs on that shared host (so for eexample if we want FPD in site A but comme across FPD in site B which is formatted like "/home/public_html/SSH-username/wwww" tjhen we can get FP[ on our original target via enumeration of the SSH usernamwe for their webr user, and from there ssimply using the webroot dir format for sdhared bodxes from the same host and modifying it to replace the SSH username with the SSH username for our target site (that we can easily eenumerate in the vast mmajority off casees)
+**NOTE:** 
+
+around 85% of the dorks within this list are for determining FPD paths on sites running on shared hosting.
+These dorks make use of Bing's "IP:" operator combinedf with other dorks in order to ideentify FPD error messages on
+other websites that are onn the same shared host. 
+
+Fromm there, we can get a solid idea of what the pattern is for default webroot dirs on that shared host...
+(so for eexample if we want FPD in site A but comme across FPD in site B which is formatted like:
+`/home/public_html/SSH-username/wwww` 
+then we can get FPD on our original target via enumeration of the SSH usernamwe for their webr user..
+and from there ssimply using the webroot dir format for shared bodxes from the same host and modifying it
+to replace the SSH username with the SSH username for our target site 
+(that we can easily eenumerate in the vast mmajority off casees).
+
+I have personally used this technique in hundreds of situations where all other FPD methods have failed me, amnd I
+can confirm that it is a highly effective and vastly underrated method of accurately determining the valid webroot dir.
