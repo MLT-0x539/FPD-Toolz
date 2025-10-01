@@ -1,0 +1,172 @@
+body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="number"] {
+            width: 100px;
+        }
+        button {
+            background-color: #dc3545;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #c82333;
+        }
+        .error {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .results-container {
+            margin-top: 20px;
+        }
+        .crawl-output {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            border-radius: 4px;
+            max-height: 500px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 12px;
+        }
+        .crawl-status {
+            color: #007bff;
+            font-weight: bold;
+        }
+        .results-summary {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .vulnerability-alert {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .php-scripts-list {
+            margin-top: 20px;
+        }
+        .php-script-item {
+            background-color: #e9ecef;
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .script-url {
+            color: #007bff;
+            font-weight: bold;
+            word-break: break-all;
+            font-family: monospace;
+        }
+        .script-details {
+            font-size: 12px;
+            color: #6c757d;
+            margin: 5px 0;
+        }
+        .parameters-list {
+            margin-top: 10px;
+        }
+        .parameter-item {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 8px;
+            margin: 3px 0;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 12px;
+        }
+        .vulnerable-param {
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+            color: #721c24;
+        }
+        .safe-param {
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+            color: #155724;
+        }
+        .form-row {
+            display: flex;
+            gap: 20px;
+            align-items: end;
+        }
+        .form-row .form-group {
+            flex: 1;
+        }
+        .form-row .form-group:last-child {
+            flex: 0 0 auto;
+        }
+        .paths-discovered {
+            background-color: #d1ecf1;
+            border: 1px solid #bee5eb;
+            color: #0c5460;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .path-item {
+            font-family: monospace;
+            background-color: #e2e3e5;
+            padding: 3px 6px;
+            margin: 2px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+        .vulnerability-details {
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .finding-item {
+            margin: 5px 0;
+            padding: 5px;
+            background-color: #ffe6e6;
+            border-radius: 3px;
+            font-size: 12px;
+        }
